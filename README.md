@@ -7,6 +7,13 @@ If you want to brush up on the subject we suggest reading:
 - [https://martinfowler.com/eaaDev/EventSourcing.html](https://martinfowler.com/eaaDev/EventSourcing.html)
 - [https://martinfowler.com/bliki/CQRS.html](https://martinfowler.com/bliki/CQRS.html)
 
+## Testers!
+If you've been sent here to write some API checks, then this is your challenge:
+
+- Use RestAssured and JUnit only (no Cucumber)
+- Don't go mad, we need to see clean code and good design decisions not 10,000 lines
+- Add comments, follow good naming conventions and remember that the application is asyhnchronous and you should adapt your tests accordingly (a 201 doesn't mean anything was successful, just that the application has accepted the request to be processed at some point in the future)
+
 ## Domain overview
 In this minimalistic bank, a _client_ can _open_ one or more _accounts_.  
 On each _account_, the _client_ can _deposit_ or _withdraw_ money.  
